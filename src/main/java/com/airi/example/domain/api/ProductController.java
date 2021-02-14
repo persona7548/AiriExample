@@ -1,12 +1,9 @@
 package com.airi.example.domain.api;
 
-
-import com.airi.example.domain.dao.ProductRepository;
 import com.airi.example.domain.dto.ProductReqDto;
 import com.airi.example.domain.entity.Product;
 import com.airi.example.domain.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -21,13 +21,11 @@ public class ProductService {
 
     @Transactional
     public Product readService(int id){
-        System.out.println(repository.findById(id).get());
         return repository.findById(id).get();
     }
 
     @Transactional
     public List<Product> readAllService(){
-        System.out.println(repository.findAll());
         return repository.findAll();
     }
 
@@ -35,6 +33,5 @@ public class ProductService {
     public Product createService(ProductReqDto request){
         Product product = request.toEntity();
         return repository.save(product);
-
     }
 }
