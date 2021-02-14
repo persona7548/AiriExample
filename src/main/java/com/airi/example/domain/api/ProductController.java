@@ -12,12 +12,9 @@ import java.util.List;
 @RequestMapping(value = "/api")
 @CrossOrigin
 public class ProductController {
-    private ProductService productService;
 
     @Autowired
-    ProductController(ProductService productService){
-        this.productService = productService;
-    }
+    private ProductService productService;
 
     @GetMapping(value = "/products")
     @ResponseBody

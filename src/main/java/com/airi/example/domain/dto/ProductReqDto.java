@@ -26,13 +26,4 @@ public class ProductReqDto {
                 .build();
     }
 
-    @Override
-    public String toString() {
-        return "ProductReqDto{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", desc='" + desc + '\'' +
-                ", price=" + price +
-                '}';
-    }
 }
